@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rena School Life</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            color: #000;
+        }
+
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+        }
+
+        section {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .buttons button {
+            background-color: #4d4d4d;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #666;
+        }
+
+        /* Rena Section */
+        .rena-section {
+            background-color: #436946;
+            position: relative;
+        }
+
+        .rena-section .content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .rena-section .image-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .rena-section .badge {
+            background-color: #fff;
+            color: #436946;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .rena-section h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        /* Xsi Section */
+        .xsi-section {
+            background-color: #5b2fa6;
+            position: relative;
+        }
+
+        .xsi-section .content {
+            z-index: 1;
+            position: relative;
+        }
+
+        .xsi-section .image-container {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        .xsi-section .badge {
+            background-color: #fff;
+            color: #5b2fa6;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .xsi-section h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">CR</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Xsi</a></li>
+                <li><a href="#">Rena</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <div class="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Section 1: Rena Section -->
+    <section class="rena-section">
+        <div class="content">
+            <span class="badge">NEW!</span>
+            <h1>레나와 함께하는<br>더 슬기로운 학교생활</h1>
+            <div class="buttons">
+                <button>자세히 알아보기 &rarr;</button>
+                <button>레나 초대하기 &rarr;</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="rena-image.png" alt="Rena">
+        </div>
+    </section>
+
+    <!-- Section 2: Xsi Section -->
+    <section class="xsi-section">
+        <div class="content">
+            <span class="badge">XSI</span>
+            <h1>귀염뽀짝한 챗봇 친구<br>크시 등장!</h1>
+            <div class="buttons">
+                <button>자세히 알아보기 &rarr;</button>
+                <button>크시 초대하기 &rarr;</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="xsi-image.png" alt="Xsi">
+        </div>
+    </section>
+
+</body>
+</html>
